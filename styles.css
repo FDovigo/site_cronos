@@ -1,0 +1,226 @@
+/*MÉTODO UTILIZADO NESTE DOCUMENTO*/
+/*
+Método BEM
+Block - componentes
+Element - elemento dentro do componente
+Modifier - modificador do elemento
+
+Exemplo:
+.box{}
+.box__title{}
+.box__item{}
+.box__item--active{}
+*/
+
+
+
+/*##################################################################################################*/
+
+/*IMPORTS VARIAVEIS E ELEMENTOS GLOBAIS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
+@import url('style/reset.css');
+@import url('style/card.css');
+@import url('style/form.css');
+@import url('style/animations.css');
+
+
+
+:root{
+    --cor-primaria: rgb(0 0 0 / 1);
+    --cor-secundaria: rgb(229 229 229 / 1);
+    --cor-terciaria: rgb(20 33 61/ 1);
+    --cor-hover: rgb(252 163 17 / 1);
+
+    --fonte-primaria: "Josefin Sans", sans-serif;
+    --fonte-secundaria: "Roboto", sans-serif;
+    --weight-primario: 700;
+    --weight-secundario: 400;
+    --weight-terciario: 300;
+    
+    --tamanho-entrada: 4.5rem;
+    --tamanho-primario: 3rem;
+    --tamanho-secundario: 1.75rem;
+    --tamanho-terciario: 1.5rem;
+    --tamanho-quaternario: 1.25rem;
+    --tamanho-p: 1rem;
+}
+
+body {
+    font-family: var(--fonte-primaria);
+    box-sizing: border-box;
+    background: rgb(10 10 10 / .6);
+    color: var(--cor-secundaria);
+}
+
+
+
+
+
+/*##################################################################################################*/
+
+/*SECTION__HOME*/
+
+.section__home{
+    width: auto;
+    height: 100vh;
+
+    background: linear-gradient(to top, 
+        rgb(0 0 0 / 0.65), rgb(0 0 0 / .35)), 
+        url("assets/bg3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12rem;
+}
+
+.section__home__social{
+    padding: 6%;
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.section__home__social i {
+    color: var(--cor-secundaria);
+    font-size: var(--tamanho-quaternario);
+    transition: 100ms;
+}
+
+.section__home__social i:hover {
+    color: var(--cor-hover);
+    transform: scale(1.1);
+}
+
+
+.section__home__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.section__home h1{
+    color: var(--cor-hover);
+    font-size: var(--tamanho-entrada);
+    font-weight: 700;
+    text-align: center;
+}
+
+.section__home p{
+    font-size: var(--tamanho-terciario);
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.section__home__nav ul {
+    padding: 6%;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.section__home__nav a {
+    color: var(--cor-secundaria);
+    font-size: var(--tamanho-quaternario);
+    text-decoration: none;
+    letter-spacing: 0.10rem;
+    font-weight: 300;
+    transition: 100ms;
+}
+
+.section__home__nav a:hover{
+    transform: scale(1.1);
+    color: var(--cor-hover);
+}
+
+
+/*##################################################################################################*/
+
+/*SECTION__MEMBERS*/
+
+.section__members {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem;
+
+    background: linear-gradient(to top, 
+        rgb(0 0 0 / 0.65), rgb(0 0 0 / .35)), 
+        url("assets/bg2.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow-x: hidden;
+}
+
+.section__members h2 {
+    font-size: var(--tamanho-secundario);
+    border-bottom: solid 1px var(--cor-hover);
+}
+
+.section__members__cite {
+    padding: 0% 4.5%;
+    font-size: var(--tamanho-p);
+    text-align: center;
+}
+
+
+
+/*##################################################################################################*/
+
+/*SECTION__CONTACT*/
+
+.section__contact {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem;
+
+    background: linear-gradient(to top,
+        rgb(0 0 0 / 0.65), rgb(0 0 0 / .35)), 
+        url("assets/bg5.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section__contact h2 {
+    font-size: var(--tamanho-primario);
+    border-bottom: solid 1px var(--cor-hover);
+}
+
+/* O formulário está na pasta de estilos */
+
+
+
+
+
+
+
+
+
+

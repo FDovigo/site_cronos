@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://kit.fontawesome.com/4b1e5d0c50.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="scripts/scrollAnimation.js"></script>
+    <script defer src="scripts/swipeAnimation.js"></script>
+    <title>Banda Cronos</title>
+</head>
+
+
+<body>
+
+    <section class="section__home">
+
+        <ul class="section__home__social">
+
+            <li class="hidden__fadein">
+                <a href="https://www.instagram.com/banda_cronos/">
+                <i class="fa-brands fa-instagram"></i></a>
+            </li> <!--instagram-->
+
+            <li class="hidden__fadein">
+                <a href="https://www.tiktok.com/@banda_cronos?_t=8kDhjOFsV6M&_r=1">
+                <i class="fa-brands fa-tiktok"></i></a>
+            </li> <!--tiktok-->
+
+            <li class="hidden__fadein">
+                <a href="">
+                <i class="fa-brands fa-youtube"></i></a>
+            </li> <!--youtube-->
+
+            <li class="hidden__fadein">
+                <a href="">
+                <i class="fa-brands fa-spotify"></i></a>
+            </li> <!--spotify-->
+
+        </ul>
+
+        <div class="section__home__text">
+            <h1>CRONOS</h1>
+            <p class="hidden__fadein">Rock Através do Tempo</p>
+        </div>
+
+        <nav class="section__home__nav">
+            <ul>
+                <li class="hidden">
+                    <a href="">Home</a>
+                </li>
+                <li class="hidden">
+                    <a href="#Sobre">Sobre</a>
+                </li>
+                <li class="hidden">
+                    <a href="#Contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+    </section>
+
+    <a id="Sobre"></a>
+    <section class="section__members">
+        
+
+        <h2 class="hidden">NOSSA BANDA</h2>
+
+        <div class="swiper mySwiper hidden__rev">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card__avatar">
+                            <img src="assets/Duda.jpg" alt="">
+                        </div>
+                        <div class="card__text">
+                            <h4>Duda Sanvido</h4>
+                            <p>Vocal</p>
+                        </div>
+                        <a href="https://www.instagram.com/duda_sanvido?igsh=MXhiODVkYTN6emxhNg==">
+                        <i i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card__avatar">
+                            <img src="assets/Mateus.jpg" alt="">
+                        </div>
+                        <div class="card__text">
+                            <h4>Mateus Avancini</h4>
+                            <p>Guitarra / Teclado</p>
+                        </div>
+                        <a href="https://www.instagram.com/mateus_avancini?igsh=Y3kyajdzOGt2dWht">
+                        <i i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card__avatar"></div>
+                        <div class="card__text">
+                            <h4>Lucas Rodrigues</h4>
+                            <p>Guitarra</p>
+                        </div>
+                        <a href="https://www.instagram.com/lucasoak?igsh=MXBoZmJ6M2swa3VtcA==">
+                        <i i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card__avatar"></div>
+                        <div class="card__text">
+                            <h4>Reinaldo King</h4>
+                            <p>Baixo</p>
+                        </div>
+                        <a href="https://www.instagram.com/reinaldoking.br?igsh=MXh4aHJmMXpqMnBrcg==">
+                        <i i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card__avatar"></div>
+                        <div class="card__text">
+                            <h4>Cesar Dainezi</h4>
+                            <p>Bateria</p>
+                        </div>
+                        <a href="https://www.instagram.com/cesardainezi?igsh=MXI1N2xydGpjZDFleA==">
+                        <i i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        
+
+        <p class="section__members__cite hidden__fadein"><cite>
+            "Nós somos a Cronos, uma banda formada por
+            integrantes que desejam viajar pela história
+            do Rock. Venha reviver com a gente as principais
+            musicas do início do século XX até os tempos atuais,
+            do Rock Clássico ao Indie, dos criadores do gênero
+            até bandas que fazem sucesso hoje em dia."
+        </cite></p>
+
+    </section>
+
+    <a id="Contato"></a>
+    <section class="section__contact">
+
+        <h2 class="hidden__rev">CONTATO</h2>
+
+        <form class="hidden" action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="05bff7d1-8e74-452b-b9e1-1ab1959e07d6">
+            <input class="input" type="email" placeholder="E-mail" required>
+            <input class="input" type="text" placeholder="Assunto" required>
+
+            <div>
+                <div>
+                    <p>Escreva sua mensagem:</p>
+                </div>
+                <textarea name="message" placeholder="" required></textarea>
+            </div>
+
+
+            <button type="submit">Enviar</button>
+
+        </form>
+
+    </section>
+
+
+</body>
+
+</html>

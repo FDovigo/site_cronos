@@ -1,0 +1,54 @@
+/*ANIMAÇÕES*/
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-10%);
+    transition: all 1s;
+}
+
+.hidden__rev{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(10%);
+    transition: all 1s;
+}
+
+.hidden__fadein{
+    opacity: 0;
+    filter: blur(10px);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+.section__home__social li:nth-child(2){
+    transition-delay: 100ms;
+}
+
+.section__home__social li:nth-child(3){
+    transition-delay: 200ms;
+}
+
+.section__home__social li:nth-child(4){
+    transition-delay: 300ms;
+}
+
+
+.section__home__text p {
+    transition-delay: 1500ms;
+}
+
+
+.section__home__nav li:nth-child(2){
+    transition-delay: 100ms;
+}
+
+.section__home__nav li:nth-child(3){
+    transition-delay: 200ms;
+}

@@ -1,0 +1,60 @@
+.swiper {
+    padding: 15% 0% 15% 0%;
+    width: 100%;
+}
+
+.swiper-slide {
+    width: 50%;
+}
+
+.card {
+    padding: 9% 4.5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5rem;
+
+    background: var(--cor-secundaria);
+}
+
+.card__avatar {
+    --size: 6rem;
+    width: var(--size);
+    height: var(--size);
+    background: url('../assets/bg1.avif');
+    border-radius: 50%;
+}
+
+.card__avatar img {
+    height: var(--size);
+    border-radius: 50%;
+}
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.card__text h4 {
+    color: var(--cor-primaria);
+    font-size: var(--tamanho-quaternario);
+    text-align: center;
+    font-weight: 600;
+}
+
+.card__text p {
+    color: var(--cor-primaria);
+    font-size: var(--tamanho-p);
+    text-align: center;
+    font-weight: 400;
+}
+
+.card i {
+    color: var(--cor-primaria);
+    font-size: var(--tamanho-quaternario);
+}
